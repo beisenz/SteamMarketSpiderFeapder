@@ -1,6 +1,6 @@
 *.pyc
 **/__pycache__
-**/secrets
+# **/secrets
 temp.py
 temp2.py
-setting.py
+# setting.py

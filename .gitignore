@@ -1,0 +1,6 @@
+*.pyc
+**/__pycache__
+**/secrets
+temp.py
+temp2.py
+setting.py

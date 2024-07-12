@@ -13,8 +13,8 @@
 源码运行
 ---
 1. 修改根目录下的`setting.py`，只需正确填写其中的Mysql与Redis相关信息
-2. 修改secrets文件夹下的文件，该文件夹保存一些个人的Cookie与代理API，其中Api返回格式为txt，换行符为`\r\n`
+2. 修改secrets文件夹下的文件，该文件夹保存一些个人的Cookie与代理API，其中代理返回格式为txt，换行符为`\r\n`
 3. 运行create_table文件夹下的`create_table_buff.py` `create_table_steam.py` `import_steam_names_ids_from_json.py`，请注意，在这之前你需要先配置好`setting.py`中的Mysql数据库
-4. 依次运行spiders文件夹中的`buff.py`与`steam_get_graph.py`，后者以来前者运行结束后保存的数据
+4. 依次运行spiders文件夹中的`buff.py`与`steam_get_graph.py`，后者依赖前者运行结束后保存的数据
 5. 运行create_table文件夹中的`buff_parse.py`即可在根目录获取到包含分析后信息的`data.xlsx`文件
-- 请注意，由于steam市集为海外服务器，所以获取steam市集相关数据时需要你有相应的网络环境，如果要使用代理，则需要使用原生海外网络环境的服务器运行，如果不使用代理，注释掉代理配置即可。
+- 请注意，由于steam市集为海外服务器，所以获取steam市集相关数据时需要你有相应的网络环境，如果要使用代理，则需要使用原生海外网络环境的服务器运行，如果不使用代理，注释掉代理配置即可
